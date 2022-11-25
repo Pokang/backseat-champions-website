@@ -1,0 +1,30 @@
+#bannercontainer{
+    position: fixed;
+    height: 50vh;
+    width: 100vw;
+
+    #bannervideo{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #bannercontent{
+        position: fixed;
+        top: 0;
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        #bannerlogo{
+            height: 30vh;
+            width: 65vw;
+            background-image: url(../../assets/BackseatChampionsLogo.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
