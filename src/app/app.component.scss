@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+#textcontainer{
+    margin-top: 5vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+
+    .title{
+        width: 75%;
+        text-align: center;
+        font-family: formula;
+        font-size: 30pt;
+        color: $darkbg;
+    }
+
+    .subtitle {
+        font-family: interRegular;
+        text-align: center;
+        font-weight: 200;
+        font-size: 16pt;
+        color: $darkbg;
+    }
+}

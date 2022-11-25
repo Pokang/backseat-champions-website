@@ -1,11 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
 
+html {
+    overflow-x: hidden;
+} //Prevent dumb horizontal scrollbar appearing because of the vertical scrollbar appearing ooga booga
+
 @font-face {
-    font-family: inter;
+    font-family: interMedium;
     src: url(assets/fonts/Inter-Medium.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: interRegular;
+    src: url(assets/fonts/Inter-Regular.ttf) format("truetype");
+}
+
 @font-face {
     font-family: formula;
-    src: url(assets/fonts/Formula1-Regular.ttf) format("truetype");
+    src: url(assets/fonts/Formula1-Bold.ttf) format("truetype");
 }
