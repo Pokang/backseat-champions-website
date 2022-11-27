@@ -1,12 +1,13 @@
 @import '../variables.scss';
 
+
 #textcontainer{
     margin-top: 5vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 20vh;
+    height: auto;
 
     .title{
         width: 75%;
@@ -16,7 +17,7 @@
         color: $darkbg;
     }
 
-    .subtitle {
+    .subtitle{
         font-family: interRegular;
         text-align: center;
         font-weight: 200;
