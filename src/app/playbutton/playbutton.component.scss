@@ -12,4 +12,9 @@
     user-select: none;
     box-shadow: $lightshadow;
     text-decoration: none;
+
+    &:hover{
+        filter:brightness(120%);
+        transition: ease-in 150ms;
+    }
 }

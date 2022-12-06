@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+#steambannercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2vh;
+    background-color: $darkbg;
+}
+
