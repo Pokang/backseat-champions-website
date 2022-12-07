@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-slitbanners',
@@ -9,7 +10,12 @@ export class SlitbannersComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    AOS.init();
   }
+
+  // ngAfterViewInit(){
+  //   AOS.init();
+  // }
 
 }
