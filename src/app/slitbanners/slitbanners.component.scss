@@ -1,7 +1,6 @@
 @import '../../variables.scss';
 
 #slitbannercontainers{
-    width: 100vw;
     height: 720px;
     margin-top: 7vh;
 
@@ -9,6 +8,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .slittextcontainer{
             width: 30%;
             height:100%;
@@ -55,11 +55,15 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
         .top{
             background-image: url(../../assets/slit1.png);
             background-position: right;
         }
-        .bot{background-image: url(../../assets/slit2.png);}
+
+        .bot{
+            background-image: url(../../assets/slit2.png);
+        }
     }
 
 }
