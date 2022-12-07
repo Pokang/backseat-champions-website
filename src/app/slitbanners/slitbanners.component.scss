@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+#slitbannercontainers{
+    width: 100vw;
+    height: 720px;
+    margin-top: 7vh;
+
+    .slitbanner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slittextcontainer{
+            width: 30%;
+            height:100%;
+            padding:40px;
+
+            h2{
+                color: $darkbg;
+                font-family: Formula;
+                font-size: 30pt;
+            }
+            h3{
+                color: $darkbg;
+                font-family: InterRegular;
+                font-weight: 200;
+                font-size: 14pt;
+                margin-top: 10px;
+                margin-bottom: 35px;
+            }
+            h4{
+                font-family: Formula;
+                font-size:12pt;
+                font-weight: 100;
+                color: $darkbg;
+
+                b{
+                    color:$playyellow;
+                }
+            }
+            
+        }
+
+        .toptext{
+            text-align: right;
+        }
+
+        .bottext{
+            text-align: left;
+        }
+
+        .slitbannerimage{
+            width: 60%;
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .top{background-image: url(../../assets/slit1.png);}
+        .bot{background-image: url(../../assets/slit2.png);}
+    }
+
+}
+
