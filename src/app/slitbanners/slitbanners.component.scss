@@ -55,7 +55,10 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .top{background-image: url(../../assets/slit1.png);}
+        .top{
+            background-image: url(../../assets/slit1.png);
+            background-position: right;
+        }
         .bot{background-image: url(../../assets/slit2.png);}
     }
 
