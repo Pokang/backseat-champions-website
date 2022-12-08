@@ -12,7 +12,8 @@
         height: 50vh;
         width: 100%;
         object-fit: cover;
-    }
+        filter:brightness(50%);
+        }
 
     #bannercontent{
         height: 80%;
