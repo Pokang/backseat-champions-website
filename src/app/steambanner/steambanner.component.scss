@@ -12,7 +12,7 @@
 
     #steambannerleft{
         width: 45%;
-        height: 100%;
+        height: 75%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,6 +27,36 @@
 
             b{
                 color:$playyellow;
+            }
+        }
+        #steambutton{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 220px;
+            height:65px;
+            background-color: $lightgrey;
+            border-radius: 7px;
+            color:$lightbg;
+            text-decoration: none;
+            font-family: formula;
+            font-size: 26pt;
+            text-shadow: 0px 4px 5px rgba(27, 27, 27, 0.5);
+            box-shadow: $lightshadow;
+
+            &:hover{
+                filter: brightness(130%);
+                box-shadow: 0px 0px 12px #f39e0b8a;
+                transition: ease-in-out 150ms;
+            }
+
+            #steamlogo{
+                background: url(../../assets/steam.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 45px;
+                width: 45px;
             }
         }
     }
