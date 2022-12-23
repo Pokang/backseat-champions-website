@@ -25,6 +25,7 @@
 
     #socialscontainer{
         display: flex;
+        align-items: center;
         gap:9px;
 
         .social{
@@ -49,6 +50,19 @@
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+        }
+
+        .presskit{
+            background: $lightgrey;
+            color:$lightbg;
+            font-family: InterRegular;
+            font-size: 10pt;
+            padding: 8px;
+            border-radius: 12px;
+
+            &:hover{
+                filter: brightness(130%);
             }
         }
 
