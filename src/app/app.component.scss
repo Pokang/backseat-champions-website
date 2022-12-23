@@ -1,6 +1,13 @@
 @import '../variables.scss';
 
-
+.flagbg{
+    position: absolute;
+    width:100%;
+    height:100vh;
+    background-image: url(../assets/flaga.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #textcontainer{
     margin-top: 5vh;
     display: flex;
