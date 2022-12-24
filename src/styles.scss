@@ -6,6 +6,10 @@ html {
     background-color: #F3F3F3;
     text-rendering: geometricPrecision;
 
+    body{
+        overflow-x: hidden;
+    }
+
     h2, h3{
         margin-block-start: 0;
         margin-block-end: 0;

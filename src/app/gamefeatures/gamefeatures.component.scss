@@ -1,6 +1,24 @@
 @import '../../variables.scss';
 
-.title{
+.sp1{
+    display:none;
+    width:100%;
+    height: 250px;
+    background-image: url(../../assets/sp1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    .titlemob{
+        display:none;
+        width:80%;
+        color:$lightbg;
+        font-size: 16pt;
+        text-align: center;
+    }
+}
+
+.title, .titlemob{
     width: 100vw;
     height: auto;
     text-align: center;
@@ -63,6 +81,12 @@
     }
 }
 
+@media (max-width: 1700px) {
+    .cardscontainer{
+        width:95%;
+    }
+}
+
 @media (max-width: 1200px) {
     .cardscontainer{
         flex-direction: column;
@@ -77,5 +101,26 @@
                 padding: 20px 20px 20px 17px;
             }
         }
+    }
+}
+
+@media(max-width: 725px){
+    .title{
+        display: none;
+    }
+    .sp1{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .titlemob{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 560px){
+    .title{
+        color:$lightbg;
     }
 }
