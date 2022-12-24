@@ -7,7 +7,7 @@ html {
     text-rendering: geometricPrecision;
 
     body{
-        overflow-x: hidden;
+        overflow-x: hidden; //for some reason this is necessary for mobile
     }
 
     h2, h3{
