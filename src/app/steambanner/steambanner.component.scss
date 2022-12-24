@@ -29,7 +29,7 @@
                 color:$playyellow;
             }
         }
-        #steambutton{
+        .steambutton{
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -43,14 +43,8 @@
             font-size: 26pt;
             text-shadow: 0px 4px 5px rgba(27, 27, 27, 0.5);
             box-shadow: $lightshadow;
-
-            &:hover{
-                filter: brightness(120%);
-                box-shadow: 0px 0px 12px #91919138;
-                transition: ease-in-out 150ms;
-            }
-
-            #steamlogo{
+            
+            .steamlogo{
                 background: url(../../assets/steam.svg);
                 background-position: center;
                 background-repeat: no-repeat;
@@ -58,6 +52,13 @@
                 height: 45px;
                 width: 45px;
             }
+
+            &:hover{
+                filter: brightness(120%);
+                box-shadow: 0px 0px 12px #91919138;
+                transition: ease-in-out 150ms;
+            }
+
         }
     }
 
@@ -67,6 +68,73 @@
         background-image: url(../../assets/steambannerbg.png);
         background-repeat: no-repeat;
         background-size: cover;
+
+        .steambutton{
+            display:none;
+            align-items: center;
+            justify-content: space-around;
+            width: 220px;
+            height:65px;
+            background-color: $darkbg;
+            border-radius: 7px;
+            color:$lightbg;
+            text-decoration: none;
+            font-family: formula;
+            font-size: 26pt;
+            text-shadow: 0px 4px 5px rgba(27, 27, 27, 0.5);
+            box-shadow: $lightshadow;
+            margin-left: 20px;
+
+            .steamlogo{
+                background: url(../../assets/steam.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 45px;
+                width: 45px;
+            }
+            &:hover{
+                filter: brightness(120%);
+                box-shadow: 0px 0px 12px #91919138;
+                transition: ease-in-out 150ms;
+            }   
+        }
+    }
+}
+
+@media (max-width: 725px) {
+    #steambannercontainer{
+        flex-direction: column;
+        background-color: $lightbg;
+        margin-top:0;
+
+        #steambannerleft{
+            width:100%;
+
+            h2{
+                color: $darkbg;
+                font-family: Formula;
+                font-size: 30pt;
+    
+                b{
+                    color:$playyellow;
+                }
+            }
+            .steambutton{
+                display:none;
+            }
+        }
+        #steambannerright{
+            width:100%;
+            display:flex;
+            align-items: center;
+            background-image: url(../../assets/mobilesteambg.png);
+            background-size: cover;
+
+            .steambutton{
+                display:flex;
+            }
+        }
     }
 }
 
