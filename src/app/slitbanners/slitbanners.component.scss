@@ -96,6 +96,11 @@
         .slitbanner{
             .slittextcontainer{
                 width: 50%;
+                padding:7px;
+
+                h2{
+                    font-size: 26pt;
+                }
                 .textcontentdesk{
                     display: none;
                 }
@@ -105,6 +110,7 @@
             }
             .slitbannerimage{
                 width: 50%;
+                height: 250px;
             }
             .bot{
                 margin-top: 2vh;
