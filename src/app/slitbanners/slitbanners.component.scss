@@ -19,13 +19,15 @@
                 font-size: 30pt;
             }
 
-            h3{
+            .textcontentdesk{
+                h3{
                 color: $darkbg;
                 font-family: InterRegular;
                 font-weight: 200;
                 font-size: 14pt;
                 margin-top: 10px;
                 margin-bottom: 35px;
+                }
             }
             
             h4{
@@ -64,6 +66,55 @@
             background-image: url(../../assets/slit2.png);
         }
     }
+    .textcontentmob{
+        display:none;
+        margin-top: 2vh;
+        h3{
+            color: $darkbg;
+            font-family: InterRegular;
+            font-weight: 200;
+            font-size: 14pt;
+            margin-top: 10px;
+            margin-bottom: 35px;
+            text-align: center;
+            padding: 0 20px 0 20px;
+        }
+    }
+    .playbutmob{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
 
 }
 
+@media (max-width: 1200px){
+    
+    #slitbannercontainers{
+        margin-top: 0;
+        .slitbanner{
+            .slittextcontainer{
+                width: 50%;
+                .textcontentdesk{
+                    display: none;
+                }
+                .playbutdesk{
+                    display:none;
+                }
+            }
+            .slitbannerimage{
+                width: 50%;
+            }
+            .bot{
+                margin-top: 2vh;
+            }
+        }
+        .textcontentmob{
+            display: block;
+        }
+        .playbutmob{
+            display: flex;
+        }
+    }
+}
